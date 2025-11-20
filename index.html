@@ -4,20 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1">
-    <title>Template</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Coming Soon</title>
+    <!-- <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
 
     <style>
-        * {
+        /* * {
             outline: 1px solid red;
             outline-offset: -1px;
+        } */
+
+        body {
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            animation-name: spinning;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-duration: 3s;
+        }
+
+        @keyframes spinning {
+            from {
+                transform: rotateY(0deg);
+            }
+            to {
+                transform: rotateY(-360deg);
+            }
         }
     </style>
 </head>
 
 <body>
-  <h1> Coming soon, IST250 activity </h1>
+    <h1> COMING SOON </h1>
+    <h2> My Web Development Portfolio</h2>
+    <img src="" alt="screenshot">
+
     <script src="script.js"></script>
 </body>
 
