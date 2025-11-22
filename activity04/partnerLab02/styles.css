@@ -1,0 +1,129 @@
+/*
+____TODO____ 
+- [x] colors base on custom var
+- [x] background change each div
+- [/] hover over select drop down color // not possible without creating custom dropdown with <div>s
+- [ ] center input text and buttons but not labels? <-- unable without flex
+- [x] finish todo list (change color and add vert line)
+- [x] favicon
+- [x] custom fonts
+- [x] clean up css
+*/
+
+:root {
+    --bgColor1: #f0e7db;
+    --bgColor2: #f7f3ed;
+    --defaultH1: black;
+    background-color: black;
+
+    --option1: #FE2020;
+    --option1b: #FF7373;
+    --option1T: #d0e0ff;
+
+    --option2: #90ee90;
+    --option2b: #d3e5d3;
+    --option2T: #6600cc;
+
+    --option3: #99ccff;
+    --option3b: #bcd7f3;
+    --option3T: #CC0000;
+}
+
+body {
+
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 20px;
+    padding: 2% 4%;
+    border-radius: 15px;
+    background-color: var(--bgColor1);
+    min-width: fit-content;
+}
+
+h1 {
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    color: var(--defaultH1);
+    margin: 5px;
+}
+
+p {
+    font-size: large;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+ol {
+    outline: 1px dashed black;
+    outline-offset: 6px;
+    border-radius: 2px;
+}
+
+li {
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: larger;
+    border-bottom: 1px solid blue;
+    border-left: 1px solid red;
+}
+
+option:nth-child(2) {
+    background-color: var(--option1);
+}
+
+option:nth-child(3) {
+    background-color: var(--option2);
+}
+
+option:nth-child(4) {
+    background-color: var(--option3);
+}
+
+.container {
+    max-width: 500px;
+    background-color: var(--bgColor2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4%;
+    margin: auto;
+    border-radius: 16px;
+}
+
+.innerContainer {
+    min-width: 235px;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: var(--bgColor1);
+
+    /* &:hover {
+        outline: 4px solid white;
+    } validator gave a parse issue */
+}
+.innerContainer:hover {
+    outline: 4px solid white;
+}
+
+#outputContainer {
+    text-align: center;
+}
+
+#listContainer {
+    margin: 6px;
+    background-color: #F9FBFF;
+    border-radius: 6px;
+}
+
+#uName {
+    width: 228px;
+}
+
+#uMessage {
+    width: 228px;
+    height: 4em;
+}

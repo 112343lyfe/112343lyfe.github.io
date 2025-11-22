@@ -1,0 +1,165 @@
+/* * {
+    outline: 1px solid red;
+    outline-offset: -1px;
+} */
+
+:root {
+    --headerBGcolor: #FFC90E;
+    --menuBGcolor: #774342;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+
+}
+
+p {
+    text-align: center;
+}
+
+img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    height: 25vh;
+    min-height: 150px;
+    padding: 10px;
+    background-color: var(--headerBGcolor);
+}
+
+#menuContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+    min-height: 300px;
+    max-width: 100vw;
+    background-color: var(--menuBGcolor);
+
+    & div {
+        width: 30%;
+        padding: 6px;
+
+        & img {
+            box-sizing: border-box;
+            max-height: 40vh;
+            min-height: 240px;
+            background-color: white;
+            border: 6px solid var(--breadYellow);
+        }
+
+        & h2 {
+            margin: auto;
+            text-align: center;
+        }
+    }
+}
+
+.menuDetails {
+    width: 0px;
+    display: none;
+}
+
+footer {
+    display: flex;
+    flex-flow: row no-wrap;
+    justify-content: center;
+    /* min-height: 25vh; */
+    background-color: var(--headerBGcolor);
+
+    & div {
+        flex: auto;
+        min-width: auto;
+        margin: 10px;
+        padding: 10px;
+
+        & * {
+            display: block;
+            text-align: center;
+            margin: 2px;
+        }
+    }
+}
+
+#phone {
+    padding: 2px;
+    text-align: center;
+    background-color: var(--menuBGcolor);
+        width: 0px;
+        display: none;
+        & h1 {
+            margin: auto;
+        }
+        & p {
+            margin: 6px;
+        }
+
+    }
+
+#contact {
+    min-width: 35%;
+}
+
+#discription {
+    max-width: 65%;
+}
+
+@media screen and (max-width: 810px) {
+
+    header {
+        height: 16vh;
+        min-height: 75px;
+    }
+
+    .menuDetails {
+        float: left;
+        width: auto;
+        display: block;
+    }
+
+    #menuContainer {
+        flex-flow: column nowrap;
+        height: auto;
+
+        & div {
+
+            box-sizing: border-box;
+            width: 50%;
+            min-width: 378px;
+            margin-left: auto;
+            margin-right: auto;
+
+            & img {
+                float: left;
+                min-height: auto;
+                width: 30%;
+            }
+        }
+    }
+
+    #discription {
+        width: 0px;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    header {
+        height: 12vh;
+        /* min-height: 12vh; */
+    }
+
+        #everything {
+        width: 0px;
+        display: none;
+    }
+    #phone {
+        display: block;
+        width: auto;
+    }
+}

@@ -1,0 +1,68 @@
+* {
+  outline: 1px solid red;
+  outline-offset: -1px;
+}
+
+#mainGrid {
+  background: rgb(39, 39, 39);
+  color: white;
+  text-align: center;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+  grid-template-areas:
+    "header header header"
+    "sidebar content1 content1"
+    "sidebar content2 content3"
+    "footer footer footer"; */
+
+    /* //////////////////////////////////// */
+
+  grid-template-columns: initial;
+  grid-template-rows: initial;
+  grid-template-areas: initial;
+
+
+  gap: 10px;
+  height: 50vh;
+  width: 80%;
+  margin: auto;
+  & > * {
+    align-content: center;
+  }
+  & div, header, footer {
+    grid-area: 1/1;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+  }
+}
+
+/* testing */
+/* #mainGrid>* {
+  background-image: url("https://cdn.pixabay.com/photo/2017/01/08/21/11/wood-1963988__340.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+} */
+
+header {
+  grid-area: header;
+  /* align-content: center; */
+}
+#sidebar {
+  grid-area: sidebar;
+}
+#content1 {
+  grid-area: content1;
+  background-color: blue;
+}
+#content2 {
+  grid-area: content2;
+}
+#content3 {
+  grid-area: content3;
+}
+footer {
+  grid-area: footer;
+}
