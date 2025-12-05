@@ -1,0 +1,239 @@
+:root {
+  --fontColor: #ffdcc5;
+  --barColor: rgb(85, 0, 24);
+  --groundBlue: #1a1845;
+  --otherBlue: #262454;
+  --mainIcons: #ff8000;
+  background-color: black;
+  color: #ffdcc5;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.lilita-one-regular {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.caveat-rcg {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  /* weight value from 200 to 800 */
+  /* font-weight: ; */
+  font-style: normal;
+}
+
+.dosis-rcg {
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  /* weight value from 200 to 800 */
+  font-weight: 500;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.6rem;
+  margin: 20px;
+  text-align: center;
+  color: var(--otherBlue);
+  text-shadow: -1px 1px 1px var(--fontColor), -2px 2px 6px var(--groundBlue);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hide {
+  width: 0px;
+  display: none;
+  font-size: 0;
+  line-height: 0;
+}
+
+body {
+  margin: 20px auto;
+  border-radius: 18px;
+  outline: 6px double white;
+  width: 40vw;
+  /* width: 95vw; */
+  min-width: 450px;
+}
+
+.theGrid {
+  display: grid;
+  grid-template-columns: 1fr 33px;
+  border-radius: inherit;
+  overflow: hidden;
+  justify-content: end;
+  min-height: 94vh;
+}
+
+.gHome {
+  grid-template-rows: 2fr 3fr;
+  grid-template-areas:
+    "header footer"
+    "nav footer";
+}
+
+header {
+  grid-area: header;
+  background-image: url(images/background02.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+nav {
+  grid-area: nav;
+  padding-left: 10vw;
+  background-image: linear-gradient(var(--groundBlue), black);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+
+  & i {
+    font-size: 2.5rem;
+    color: var(--mainIcons);
+    text-shadow: -1px 1px 1px black;
+  }
+
+  & li a {
+    display: block;
+    color: inherit;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 10px;
+
+    &.current i {
+      color: var(--barColor);
+      text-shadow: 4px 3px 3px black;
+    }
+
+    &:hover:not(.current) {
+      background-color: #ffffff2f;
+      transform: scale(1.07, 1.07);
+
+      & i {
+        color: var(--barColor);
+      }
+    }
+  }
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  height: 100%;
+  writing-mode: vertical-rl;
+  background: var(--barColor);
+  z-index: 1000;
+  font-size: 1.4rem;
+
+  & i {
+    align-content: center;
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+    text-shadow: -1px 1px 1px black;
+  }
+
+  & div {
+    padding: 12px 0px;
+  }
+}
+
+
+/* changes to index for other pages */
+
+.gPage {
+  grid-template-rows: 60px auto;
+  grid-template-areas:
+    "nav footer"
+    "container footer";
+}
+
+.nPage {
+  padding-left: inherit;
+  background: var(--otherBlue);
+  text-align: center;
+
+  & ul {
+    font-size: 0;
+    line-height: 0;
+
+    & li {
+      display: inline-block;
+    }
+  }
+}
+
+.cPage {
+  grid-area: container;
+  background-image: linear-gradient(var(--otherBlue), black);
+  display: flex;
+}
+
+
+
+/* gallery testing */
+
+/* div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+} */

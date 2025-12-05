@@ -1,8 +1,31 @@
-# Practice Activity 4
+# Individual Assignment 4 (Final Project)
 
-- [ ] Host your complete portfolio on a web hosting server.
-- [ ] Your portfolio must have a front page with links and one screenshot of each of your class assignments (3 practice activities, 2 partner labs, and 4 individual assignments). 
-- [ ] Each assignment website must be placed in its own folder and must have a link to go back to the main page (you can create a navigation bar on top of the main page of every assignment website).
-- [ ] Make the front page look very attractive and professional since it is the cover page of your web development portfolio.
+The goal of this assignment is to create a multi-page website that informs the reader about some topic that you are knowledgeable about or interested in.  You have a great deal of flexibility with regard to the content of this website (but please keep it appropriate for all audiences).
 
-Note: Although we haven't created Individual assignment 4 (final project), please include a link to an "under construction" index.html page within a separate folder so you can upload your final project there when you finish it.
+You are encouraged to go above and beyond the minimum requirements. This is your final project and it must show the best of your abilities. If you just do the minimum, you won´t get full marks.
+
+Minimum Requirements:
+
+- [ ] Your website should render correctly without any syntactical or usage errors, and it should have generally good appearance, function properly, and convey information in an effective manner. I will be using the Chrome browser to evaluate it.
+- [ ] Your website should include at least five web pages. You should have at least five html files, but they may share common CSS and/or JavaScript files.
+- [ ] Your website should make effective use of the following HTML elements:
+  - [x] Paragraphs
+  - [x] Divs or spans
+  - [x] Lists (ordered or unordered)
+  - [x] At least one image
+  - [ ] At least one table
+  - [ ] An HTML footer with fixed positioning on each page
+  - [ ] A contact form that displays a message when submitted
+  - [ ] Either a menu or hyperlinks connecting each of your pages (navigation bar).
+- [ ] Your website should make effective use of the following CSS capabilities:
+  - [ ] Applying styles to your entire web page
+  - [ ] Applying styles by class
+  - [ ] Applying styles by ID
+  - [ ] Applying styles using pseudoclasses (ie. link, visited, hover, active, etc)
+  - [ ] Performing layout with CSS Grid or Flexbox
+  - [ ] Appying transforms and filters
+  - [ ] Applying positioning (ie. to the elements in the contact form)
+  - [ ] Appying Bootstrap styles (ie. to the contact form)
+- [ ] Your website should use JavaScript in some way to improve interactivity (in addition to the contact form).
+- [ ] Your website should utilize the @media selector (for smartphones, tablets, and laptops) and set viewport appropriately for Responsive design (as discussed in Lesson 7).
+- [ ] Your website should be hosted in a free web hosting server (like InfinityFree or GitHub). It can be part of your portfolio website.
