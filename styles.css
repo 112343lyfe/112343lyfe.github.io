@@ -67,7 +67,7 @@ body {
   outline: 6px double white;
   width: 40vw;
   /* width: 95vw; */
-  min-width: 450px;
+  min-width: 350px;
 }
 
 .theGrid {
@@ -96,7 +96,7 @@ header {
 
 nav {
   grid-area: nav;
-  padding-left: 10vw;
+  padding-left: 5vw;
   background-image: linear-gradient(var(--groundBlue), black);
 }
 
