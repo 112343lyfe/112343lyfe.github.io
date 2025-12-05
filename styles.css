@@ -164,7 +164,7 @@ footer {
 /* changes to index for other pages */
 
 .gPage {
-  grid-template-rows: 7.6vw auto;
+  grid-template-rows: 50px auto;
   grid-template-areas:
     "nav footer"
     "container footer";
@@ -177,7 +177,7 @@ footer {
   
 
   & i {
-    font-size: 3.8vw;
+    font-size: 1.6rem;
   }
 
   & ul {
@@ -193,7 +193,7 @@ footer {
 .cPage {
   grid-area: container;
   background-image: linear-gradient(var(--otherBlue), black);
-  display: flex;
+  /* display: flex; */
 }
 
 
