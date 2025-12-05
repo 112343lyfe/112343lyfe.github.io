@@ -65,8 +65,7 @@ body {
   margin: 20px auto;
   border-radius: 18px;
   outline: 6px double white;
-  width: 40vw;
-  /* width: 95vw; */
+  max-width: 50vw;
   min-width: 350px;
 }
 
