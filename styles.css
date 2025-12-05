@@ -75,7 +75,7 @@ body {
   border-radius: inherit;
   overflow: hidden;
   justify-content: end;
-  min-height: 94vh;
+  min-height: 86vh;
 }
 
 .gHome {
@@ -104,6 +104,7 @@ ul {
   margin: 0;
   padding: 0;
   font-size: 2rem;
+  white-space: nowrap;
 
   & i {
     font-size: 2.5rem;
@@ -163,7 +164,7 @@ footer {
 /* changes to index for other pages */
 
 .gPage {
-  grid-template-rows: 60px auto;
+  grid-template-rows: 7.6vw auto;
   grid-template-areas:
     "nav footer"
     "container footer";
@@ -173,6 +174,11 @@ footer {
   padding-left: inherit;
   background: var(--otherBlue);
   text-align: center;
+  
+
+  & i {
+    font-size: 3.8vw;
+  }
 
   & ul {
     font-size: 0;
