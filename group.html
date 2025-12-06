@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1">
-    <title>Assignment 4 | Home</title>
+    <title>Assignment 4 | Group Rides</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/person-biking-solid.svg" type="image/x-icon">
     <script src="https://kit.fontawesome.com/83f06af507.js" crossorigin="anonymous"></script>
@@ -13,31 +13,67 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dosis:wght@200..800&family=Lilita+One&display=swap"
         rel="stylesheet">
+    <link href="bootstrap-iso.css" rel="stylesheet" />
 
-        <link href="bootstrap-iso.css" rel="stylesheet" />
+     <script src="bootstrap.bundle.min.js"></script>
+
+    <!-- <style>
+        * {
+            outline: 1px solid red;
+            outline-offset: -1px;
+        }
+    </style> -->
 
 </head>
 
 <body>
-    <div class="theGrid gHome">
-        <header id="header">
+    <div class="theGrid gPage">
+        <header class="hide">
             <h1>My Simple Cycling Website</h1>
         </header>
 
-
-        <nav>
+        <nav class="nPage">
             <ul>
-                <li class="hide"><a href="index.html"><i class="fa-solid fa-house"></i>&nbsp; Home</a></li>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i>&nbsp; Home</a></li>
                 <li><a href="local_routes.html"><i class="fas fa-map-marked-alt"></i>&nbsp; Local Routes</a></li>
                 <li><a href="adventures.html"><i class="fas fa-campground"></i>&nbsp Adventures</a></li>
                 <li><a href="photos.html"><i class="fas fa-camera-retro"></i>&nbsp Photos</a></li>
-                <li><a href="group.html"><i class='fas fa-biking'></i>&nbsp Group Rides</a></li>
+                <li><a class="current" href="group.html"><i class='fas fa-biking'></i>&nbsp Group Rides</a></li>
             </ul>
         </nav>
 
-        <div class="cPage hide">
-            <p>this is where route images and links will go. A gallary</p>
+
+        <div class="cPage">
+
+            <div class="bootstrap-iso">
+
+<div class="p-3 m-0 border-0 bd-example m-0 border-0">
+<form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+
+
+
+            </div>
         </div>
+
+
+
+
 
         <footer>
             <div>
@@ -49,7 +85,10 @@
             </div>
             <div><a href="mailto:hello@robertgirard.com" target="_blank">hello@RobertGirard.com</a></div>
         </footer>
-<script src="bootstrap.bundle.min.js"></script>
+
+    </div>
+
+
 </body>
 
 </html>
