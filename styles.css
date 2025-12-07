@@ -38,27 +38,16 @@
   font-style: normal;
 }
 
-h1 {
-  font-family: "Lilita One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 2.6rem;
-  margin: 20px;
-  text-align: center;
-  color: var(--otherBlue);
-  text-shadow: -1px 1px 1px var(--fontColor), -2px 2px 6px var(--groundBlue);
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 .hide {
   width: 0px;
   display: none;
   font-size: 0;
   line-height: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 body {
@@ -83,6 +72,17 @@ body {
   grid-template-areas:
     "header footer"
     "nav footer";
+}
+
+h1 {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.6rem;
+  margin: 20px;
+  text-align: center;
+  color: var(--otherBlue);
+  text-shadow: -1px 1px 1px var(--fontColor), -2px 2px 6px var(--groundBlue);
 }
 
 header {
@@ -174,7 +174,7 @@ footer {
   padding-left: inherit;
   background: var(--otherBlue);
   text-align: center;
-  
+
 
   & i {
     font-size: 1.6rem;
@@ -190,13 +190,39 @@ footer {
   }
 }
 
-.cPage {
+.page {
   grid-area: container;
   background-image: linear-gradient(var(--otherBlue), black);
-  /* display: flex; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.page h1 {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  /* weight value from 200 to 800 */
+  /* font-weight: ; */
+  font-style: normal;
+  color: var(--fontColor);
+  */ text-shadow: -1px 1px 1px var(--fontColor), -2px 2px 6px var(--groundBlue);
+}
 
+.subPage {
+    max-width: 500px;
+    background-color: var(--barColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6%;
+    /* margin: 0px; */
+    border-radius: 16px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
 
 /* gallery testing */
 

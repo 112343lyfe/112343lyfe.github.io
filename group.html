@@ -15,14 +15,14 @@
         rel="stylesheet">
     <link href="bootstrap-iso.css" rel="stylesheet" />
 
-     <script src="bootstrap.bundle.min.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
 
-    <!-- <style>
+    <style>
         * {
             outline: 1px solid red;
             outline-offset: -1px;
         }
-    </style> -->
+    </style>
 
 </head>
 
@@ -43,37 +43,56 @@
         </nav>
 
 
-        <div class="cPage">
+        <div class="page">
 
-            <div class="bootstrap-iso">
+            <h1>Sign up - let's make it a Group Ride!</h1>
+            <div class="subPage">
+                <h2>Customize</h2>
 
-<div class="p-3 m-0 border-0 bd-example m-0 border-0">
-<form>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-  </div>
-  <div class="mb-3 form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-</div>
-
+                <select>
+                    <!-- <option value="0" selected disabled>Select a Color</option> -->
+                    <option value="1">Say hello</option>
+                    <option value="2">Join a group ride</option>
+                    <!-- <option value="3">Bikepacking interest</option> -->
+                </select>
+                <form onsubmit="return false;">
+                    <label for="uName">Name:</label>
+                    <input type="text" name="name" id="uName">
+                    <label for="uName">Name:</label>
+                    <input type="text" name="name" id="uName">
+                    <label for="uMessage">Message:</label><br>
+                    <textarea name="uMessage" id="uMessage"></textarea><br><br>
+                    <label for="uBgColor">Background:</label>
+                    <br><br>
+                    <input type="button" value="Submit" onclick="makeChanges()">
+                </form>
 
 
             </div>
+create schedule table that appears only when group ride is selected
+Add popup on submit "thanks for reaching out"
+<div class="bootstrap-iso">
+             <select>
+                    <!-- <option value="0" selected disabled>Select a Color</option> -->
+                    <option value="1">Say hello</option>
+                    <option value="2">Join a group ride</option>
+                    <!-- <option value="3">Bikepacking interest</option> -->
+                </select>
+
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" >
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
         </div>
-
-
-
-
 
         <footer>
             <div>
