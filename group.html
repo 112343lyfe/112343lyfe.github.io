@@ -45,52 +45,34 @@
 
         <div class="page">
 
-            <h1>Sign up - let's make it a Group Ride!</h1>
-            <div class="subPage">
-                <h2>Customize</h2>
 
-                <select>
-                    <!-- <option value="0" selected disabled>Select a Color</option> -->
-                    <option value="1">Say hello</option>
-                    <option value="2">Join a group ride</option>
-                    <!-- <option value="3">Bikepacking interest</option> -->
-                </select>
+            <div class="subPage">
+                <h1>Sign up - let's make it a Group Ride!</h1>
                 <form onsubmit="return false;">
-                    <label for="uName">Name:</label>
-                    <input type="text" name="name" id="uName">
-                    <label for="uName">Name:</label>
-                    <input type="text" name="name" id="uName">
-                    <label for="uMessage">Message:</label><br>
-                    <textarea name="uMessage" id="uMessage"></textarea><br><br>
-                    <label for="uBgColor">Background:</label>
-                    <br><br>
+
+                    <!-- <label for="formOption">Options</label> -->
+                    <select>
+                        <option value="0" selected disabled>Select</option>
+                        <option value="1">Say hello</option>
+                        <option value="2">Join a group ride</option>
+                        <!-- <option value="3">Bikepacking interest</option> -->
+                    </select>
+
+
+                    <label for="fName">First Name</label>
+                    <input type="text" name="name" id="fName">
+                    <label for="lName">Last Name</label>
+                    <input type="text" name="name" id="lName">
+                    <label for="uMessage">Message:</label>
+                    <textarea name="uMessage" id="uMessage"></textarea>
                     <input type="button" value="Submit" onclick="makeChanges()">
                 </form>
 
 
             </div>
-create schedule table that appears only when group ride is selected
-Add popup on submit "thanks for reaching out"
-<div class="bootstrap-iso">
-             <select>
-                    <!-- <option value="0" selected disabled>Select a Color</option> -->
-                    <option value="1">Say hello</option>
-                    <option value="2">Join a group ride</option>
-                    <!-- <option value="3">Bikepacking interest</option> -->
-                </select>
+            create schedule table that appears only when group ride is selected
+            Add popup on submit "thanks for reaching out"
 
-    <form>
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" >
-      </div>
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1">
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-</div>
 
         </div>
 
