@@ -27,12 +27,12 @@
 </head>
 
 <body>
-    <div class="theGrid gPage">
+    <div class="theGrid pages">
         <header class="hide">
             <h1>My Simple Cycling Website</h1>
         </header>
 
-        <nav class="nPage">
+        <nav>
             <ul>
                 <li><a href="index.html"><i class="fa-solid fa-house"></i>&nbsp; Home</a></li>
                 <li><a href="local_routes.html"><i class="fas fa-map-marked-alt"></i>&nbsp; Local Routes</a></li>
@@ -42,11 +42,9 @@
             </ul>
         </nav>
 
+        <div class="pageContent">
 
-        <div class="page">
-
-
-            <div class="subPage">
+            <div class="">
                 <h1>Sign up - let's make it a Group Ride!</h1>
                 <form onsubmit="return false;">
 
@@ -67,7 +65,6 @@
                     <textarea name="uMessage" id="uMessage"></textarea>
                     <input type="button" value="Submit" onclick="makeChanges()">
                 </form>
-
 
             </div>
             create schedule table that appears only when group ride is selected
