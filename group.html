@@ -17,12 +17,12 @@
 
     <script src="bootstrap.bundle.min.js"></script>
 
-    <style>
+    <!-- <style>
         * {
             outline: 1px solid red;
             outline-offset: -1px;
         }
-    </style>
+    </style> -->
 
 </head>
 
@@ -43,11 +43,11 @@
         </nav>
 
         <div class="pageContent">
+            <h1 class="caveat-rcg">Sign up - let's make it a <u>Group Ride!</u></h1>
 
-            <div class="">
-                <h1>Sign up - let's make it a Group Ride!</h1>
+            <div class="container flex">
+
                 <form onsubmit="return false;">
-
                     <!-- <label for="formOption">Options</label> -->
                     <select>
                         <option value="0" selected disabled>Select</option>
@@ -55,7 +55,6 @@
                         <option value="2">Join a group ride</option>
                         <!-- <option value="3">Bikepacking interest</option> -->
                     </select>
-
 
                     <label for="fName">First Name</label>
                     <input type="text" name="name" id="fName">
