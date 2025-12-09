@@ -15,7 +15,7 @@
         rel="stylesheet">
     <link href="bootstrap-iso.css" rel="stylesheet" />
 
-     <script src="bootstrap.bundle.min.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
 
     <!-- <style>
         * {
@@ -27,12 +27,12 @@
 </head>
 
 <body>
-    <div class="theGrid gPage">
+    <div class="theGrid pages">
         <header class="hide">
             <h1>My Simple Cycling Website</h1>
         </header>
 
-        <nav class="nPage">
+        <nav>
             <ul>
                 <li><a href="index.html"><i class="fa-solid fa-house"></i>&nbsp; Home</a></li>
                 <li><a href="local_routes.html"><i class="fas fa-map-marked-alt"></i>&nbsp; Local Routes</a></li>
@@ -42,38 +42,35 @@
             </ul>
         </nav>
 
+        <div class="pageContent">
+            <h1 class="caveat-rcg">Sign up - let's make it a <u>Group Ride!</u></h1>
 
-        <div class="cPage">
+            <div class="container flex">
 
-            <div class="bootstrap-iso">
+                <form onsubmit="return false;">
+                    <!-- <label for="formOption">Options</label> -->
+                    <select>
+                        <option value="0" selected disabled>Select</option>
+                        <option value="1">Say hello</option>
+                        <option value="2">Join a group ride</option>
+                        <!-- <option value="3">Bikepacking interest</option> -->
+                    </select>
 
-<div class="p-3 m-0 border-0 bd-example m-0 border-0">
-<form>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-  </div>
-  <div class="mb-3 form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-</div>
-
-
+                    <label for="fName">First Name</label>
+                    <input type="text" name="name" id="fName">
+                    <label for="lName">Last Name</label>
+                    <input type="text" name="name" id="lName">
+                    <label for="uMessage">Message:</label>
+                    <textarea name="uMessage" id="uMessage"></textarea>
+                    <input type="button" value="Submit" onclick="makeChanges()">
+                </form>
 
             </div>
+            create schedule table that appears only when group ride is selected
+            Add popup on submit "thanks for reaching out"
+
+
         </div>
-
-
-
-
 
         <footer>
             <div>
