@@ -29,3 +29,7 @@ Minimum Requirements:
 - [ ] Your website should use JavaScript in some way to improve interactivity (in addition to the contact form).
 - [ ] Your website should utilize the @media selector (for smartphones, tablets, and laptops) and set viewport appropriately for Responsive design (as discussed in Lesson 7).
 - [ ] Your website should be hosted in a free web hosting server (like InfinityFree or GitHub). It can be part of your portfolio website.
+
+## ToDo List
+
+- [ ] Test 
