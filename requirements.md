@@ -33,3 +33,18 @@ Minimum Requirements:
 ## ToDo List
 
 - [ ] Test 
+
+
+## Notes
+
+SRT-ECG-Penny-Wiss-Forbidden
+https://ridewithgps.com/routes/53478568
+
+group_84
+https://ridewithgps.com/routes/53442599
+
+Green Lane 77
+https://ridewithgps.com/routes/53480205
+
+Valley Forge 100K
+https://ridewithgps.com/routes/53480286
