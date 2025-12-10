@@ -32,8 +32,7 @@ Minimum Requirements:
 
 ## ToDo List
 
-- [ ] Test 
-
+- [ ] Test
 
 ## Notes
 
