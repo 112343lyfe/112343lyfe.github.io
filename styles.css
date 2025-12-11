@@ -273,6 +273,9 @@ form {
   margin-top: 16px;
   vertical-align: middle;
   width: 100%;
+
+  border-radius: 8px;
+  box-shadow: -4px 4px 4px hsla(0, 0%, 0%, 0.5);
 }
 
 @media screen and (max-width: 1400px) {
@@ -287,4 +290,30 @@ form {
     flex: 100%;
     max-width: 100%;
   }
+}
+
+/* grid pix? */
+
+.gallery-container {
+  display: grid;
+  /* Repeats columns automatically to fit as many items as possible */
+  /* minmax ensures a minimum width of 200px and a maximum of 1fr */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px; /* Space between images */
+  padding: 10px;
+}
+
+.gallery-item img {
+  width: 100%; /* Makes image fill its container */
+  height: 150px; /* Fixes height for consistent look */
+  object-fit: cover; /* Ensures images cover the area without stretching */
+  display: block;
+  border-radius: 5px;
+  transition: transform 0.3s ease; /* Smooth hover effect transition */
+}
+
+/* Optional: Add hover effects */
+.gallery-item img:hover {
+  transform: scale(1.05); /* Slightly enlarges image on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
