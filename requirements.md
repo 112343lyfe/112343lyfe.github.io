@@ -7,16 +7,24 @@
 
 ## ToDo List
 
-- [ ] Content:
-  - [x] Local Routes
-  - [ ] Images
-  - [ ] adventure
-- [ ] Group Page:
+- Adventure
+  - [ ] content
+  - [ ] minor formatting (margins and padding)
+
+- Photos
+  - [ ] content
+  - [ ] Finish formatting images
+  - [ ] add [model](https://www.w3schools.com/howto/howto_css_modal_images.asp)
+
+- Group Page:
   - [ ] Contact Form
   - [ ] Group Ride table
   - [ ] display table on group ride drop down select
-- [ ] add additional section to home page with an @media selector
-- [ ] change bootstrap break-points
-- [ ] try to impliment bootstrap links again - inspect css causing issues
-- [ ] create a one-page version using javascript to hide etc.
-- [ ] attempt animation of nav bar
+
+- extra
+  - [ ] adjust subtitle format
+  - [ ] add additional section to home page with an @media selector
+  - [x] change bootstrap break-points
+  - [ ] try to impliment bootstrap links again - inspect css causing issues
+  - [ ] create a one-page version using javascript to hide etc.
+  - [ ] attempt animation of nav bar
