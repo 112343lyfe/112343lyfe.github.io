@@ -87,7 +87,8 @@ body {
   margin: 20px auto;
   border-radius: 18px;
   outline: 6px double white;
-  max-width: 50vw;
+  width: 80vw;
+  max-width: 1000px;
   min-width: 350px;
 }
 
@@ -135,6 +136,10 @@ header {
 
 nav {
   grid-area: nav;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
   padding-left: 5vw;
   background-image: linear-gradient(var(--groundBlue), black);
 
@@ -146,10 +151,11 @@ nav {
 
   & ul {
     list-style-type: none;
-    margin-top: 0;
+    margin: 0;
     padding: 0;
     font-size: 2rem;
     white-space: nowrap;
+    /* max-width: 50%; */
 
     & li a {
       display: block;
@@ -235,7 +241,7 @@ footer {
 
 }
 
-.container {
+.shadowContainer {
   margin-top: 30px;
   padding: .3rem;
   border-radius: 12px;
@@ -281,27 +287,15 @@ form {
     border-radius: 8px;
     box-shadow: -6px 6px 6px black;
           &:hover {
-        transform: scale(1.2, 1.2);
-        transition-duration: .5s;
+        transform: scale(1.1, 1.1);
+        transition-duration: .25s;
         box-shadow:  0px 0px 30px rgb(255, 255, 255);
   }
 }
 }
 
 
-@media screen and (max-width: 1400px) {
-  .pixC {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
 
-@media screen and (max-width: 1000px) {
-  .pixC {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
 
 /* modal testing */
 
@@ -370,9 +364,29 @@ form {
   cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+/* @media only screen and (max-width: 700px){
   .modal-content {
     width: 100%;
   }
-} 
+}  */
+
+@media screen and (max-width: 1100px) {
+  .pixC {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .pixC {
+    flex: 100%;
+    max-width: 100%;
+  }
+  #mainPage {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+    .modal-content {
+    width: 100%;
+  }
+}
