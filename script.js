@@ -59,25 +59,36 @@ function todoAdd() {
     // console.table(itemList);
 }
 
-// model testing
+/////////////////////////////// model testing ///////////////////////////////////////
 
-// Get the modal
-var modal = document.getElementById("myModal");
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
+// Source - https://stackoverflow.com/a
+// Posted by David Kerr, modified by community. See post 'Timeline' for change history
+// Retrieved 2025-12-12, License - CC BY-SA 4.0
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+const images = document.querySelectorAll(".galleryImg");
+const closeButtons = document.querySelectorAll(".close");
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-} 
+const toggleModal = (image) => {
+  const modal = document.querySelector(`#modal`);
+  modal.classList.toggle("hidden");
+
+  if (image) {
+    const modalImage = modal.querySelector("img");
+    modalImage.src = image.src;
+    const modalCaption = modal.querySelector("#caption");
+    modalCaption.innerHTML = image.alt;
+  }
+};
+
+images.forEach((image) => {
+  image.addEventListener("click", (event) => {
+    toggleModal(image);
+  });
+});
+
+closeButtons.forEach((closeButton) => {
+  closeButton.addEventListener("click", (event) => {
+    toggleModal();
+  });
+});
