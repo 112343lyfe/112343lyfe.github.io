@@ -231,6 +231,13 @@ footer {
   }
 }
 
+#welcome {
+  padding: 20px;
+  max-width: 40%;
+  font-size: x-large;
+  font-weight: 400;
+}
+
 .pageContent {
   grid-area: container;
   background-image: linear-gradient(var(--otherBlue), black);
@@ -270,6 +277,19 @@ form {
   color: var(--fontColor);
   margin-top: 0.25rem;
   font-size: 0.875em;
+}
+
+button {
+background-color: red;
+  border-color: red;
+}
+
+.btn-primary, .btn-primary:active, .btn-primary:visited {
+    background-color: var(--mainIcons) !important;
+    border-color: var(--mainIcons) !important;
+}
+.btn-primary:hover {
+         background-color: #ffffff2f !important;
 }
 
 
@@ -423,5 +443,9 @@ form {
   #mainPage {
     flex-direction: column;
     justify-content: flex-start;
+  }
+
+  #welcome {
+    max-width: inherit;
   }
 }

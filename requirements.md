@@ -7,7 +7,7 @@
 
 ## ToDo List
 
-- [ ] Add homepage text
+- [x] Add homepage text
 
 - [x] Contact Form
 - [x] Group Ride table
@@ -16,6 +16,6 @@
 
 - extra
   - [ ] clean up images CSS and JS
-  - [ ] try to impliment bootstrap links again - inspect css causing issues
+  - [x] try to impliment bootstrap links again - inspect css causing issues
   - [ ] create a one-page version using javascript to hide etc.
   - [ ] attempt animation of nav bar
