@@ -271,12 +271,13 @@ form {
 .pixR {
   display: flex;
   flex-wrap: wrap;
+  /* flex-direction: column; */
   padding: 0 4px;
 }
 
 .pixC {
   flex: 33%;
-  max-width: 33%;
+  /* max-width: 100%; */
   padding: 0 8px;
 
   & img {
@@ -300,9 +301,6 @@ form {
 
 /* modal testing */
 
-
-
-
 /* Modal Content (Image) */
 /* .modal-content {
   margin: auto;
@@ -312,78 +310,10 @@ form {
 } */
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
-/* Add Animation - Zoom in the Modal */
-.modal-content,
-#caption {
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@keyframes zoom {
-  from {
-    transform: scale(0)
-  }
-
-  to {
-    transform: scale(1)
-  }
-}
-
-/* The Close Button */
-/* .close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-} */
-
-/* .close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-} */
-
-/* @media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
-}  */
 
 
 
-/* better modal */
 
-/*
-Source - https://stackoverflow.com/a
-Posted by David Kerr, modified by community. See post 'Timeline' for change history
-Retrieved 2025-12-12, License - CC BY-SA 4.0
-*/
-
-/* Style the Image Used to Trigger the Modal */
-/* .body__image {
-  max-width: 400px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.body__image:hover {
-  opacity: 0.7;
-} */
 
 /* The Modal (background) */
 .modal {
@@ -418,6 +348,17 @@ Retrieved 2025-12-12, License - CC BY-SA 4.0
   max-width: 700px;
 }
 
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
 /* The Close Button */
 .close {
   position: absolute;
@@ -436,15 +377,22 @@ Retrieved 2025-12-12, License - CC BY-SA 4.0
   cursor: pointer;
 }
 
-/* .caption {
-  margin: auto;
-  display: block;
-  color: white;
-  padding: 10px 0;
-  height: 150px;
-  width: 80%;
-  max-width: 700px;
-} */
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
 
 .hidden {
   display: none;

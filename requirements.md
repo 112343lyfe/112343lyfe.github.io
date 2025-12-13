@@ -7,25 +7,15 @@
 
 ## ToDo List
 
-- Adventure
-  - [x] content
-  - [x] minor formatting (margins and padding)
+- [ ] Add homepage text
 
-- Photos
-  - [x] content
-  - [x] Finish formatting images
-  - [ ] add [model](https://www.w3schools.com/howto/howto_css_modal_images.asp)
-  - [ ] add alt text
-
-- Group Page:
-  - [ ] Contact Form
-  - [ ] Group Ride table
-  - [ ] display table on group ride drop down select
+- [ ] Contact Form
+- [ ] Group Ride table
+  - date, time, route, miles, start location
+- [ ] display table on group ride drop down select
 
 - extra
-  - [x] adjust subtitle format
-  - [ ] add additional section to home page with an @media selector
-  - [x] change bootstrap break-points
+  - [ ] clean up images CSS and JS
   - [ ] try to impliment bootstrap links again - inspect css causing issues
   - [ ] create a one-page version using javascript to hide etc.
   - [ ] attempt animation of nav bar
