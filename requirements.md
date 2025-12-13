@@ -1,18 +1,18 @@
 # Individual Assignment 4 (Final Project)
 
-- [ ] At least one table
+- [x] At least one table
 - [ ] A contact form that displays a message when submitted
-- [ ] Your website should use JavaScript in some way to improve interactivity (in addition to the contact form).
-- [ ] Your website should utilize the @media selector (for smartphones, tablets, and laptops) and set viewport appropriately for Responsive design (as discussed in Lesson 7).
+- [x] Your website should use JavaScript in some way to improve interactivity (in addition to the contact form).
+- [x] Your website should utilize the @media selector (for smartphones, tablets, and laptops) and set viewport appropriately for Responsive design (as discussed in Lesson 7).
 
 ## ToDo List
 
 - [ ] Add homepage text
 
-- [ ] Contact Form
-- [ ] Group Ride table
+- [x] Contact Form
+- [x] Group Ride table
   - date, time, route, miles, start location
-- [ ] display table on group ride drop down select
+- [x] display table on group ride drop down select
 
 - extra
   - [ ] clean up images CSS and JS

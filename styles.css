@@ -242,8 +242,8 @@ footer {
 }
 
 .shadowContainer {
-  margin-top: 30px;
-  padding: .3rem;
+  margin: 30px 20px;
+  padding: 20px;
   border-radius: 12px;
   box-shadow: inset 0 0 18px black;
   /* background: hsla(0, 0%, 0%, 0.352); */
@@ -263,8 +263,15 @@ footer {
 form {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
+
+.myform-text {
+  color: var(--fontColor);
+  margin-top: 0.25rem;
+  font-size: 0.875em;
+}
+
 
 /* photos page */
 
