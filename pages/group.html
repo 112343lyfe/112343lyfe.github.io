@@ -40,62 +40,98 @@
                 <li><a href="../pages/adventures.html"><i class="fas fa-campground"></i>&nbsp
                         Adventures</a></li>
                 <li><a href="../pages/photos.html"><i class="fas fa-camera-retro"></i>&nbsp Photos</a></li>
-                <li><a class="current" href="../pages/group.html"><i class='fas fa-biking'></i>&nbsp Group Rides</a></li>
+                <li><a class="current" href="../pages/group.html"><i class='fas fa-biking'></i>&nbsp Group Rides</a>
+                </li>
             </ul>
         </nav>
 
         <main class="pageContent">
-            <h1 class="caveat-rcg">Sign up - let's make it a <u>Group Ride!</u></h1>
+            <div class="shadowContainer">
+                <h1 class="caveat-rcg">Sign up - let's make it a <u>Group Ride!</u></h1>
+                <h2>...or just say hi</h2>
 
-            <div class="shadowContainer flex">
+                <div class="bootstrap-iso">
+                    <form style="padding-top: 30px;">
 
-                <form onsubmit="return false;">
-                    <!-- <label for="formOption">Options</label> -->
-                    <select>
-                        <option value="0" selected disabled>Select</option>
-                        <option value="1">Say hello</option>
-                        <option value="2">Join a group ride</option>
-                        <!-- <option value="3">Bikepacking interest</option> -->
-                    </select>
 
-                    <label for="fName">First Name</label>
-                    <input type="text" name="name" id="fName">
-                    <label for="lName">Last Name</label>
-                    <input type="text" name="name" id="lName">
-                    <label for="uMessage">Message:</label>
-                    <textarea name="uMessage" id="uMessage"></textarea>
-                    <input type="button" value="Submit" onclick="makeChanges()">
-                </form>
 
-            </div>
-            <p>create schedule table that appears only when group ride is selected
-                Add popup on submit "thanks for reaching out"</p>
 
-            <div class="bootstrap-iso">
-                <form>
-                    <div class="mb-3">
-                        <select class="form-select">
-                            <option value="0" selected disabled>Select</option>
-                            <option value="1">Say hello</option>
-                            <option value="2">Join a group ride</option>
-                            <!-- <option value="3">Bikepacking interest</option> -->
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                    </div>
-                    <div class="mb-3">
+
+                        <div class="mb-3">
+                            <select id="selectChoice" class="form-select form-control-lg" oninput="formChoice()">
+                                <option value="0" selected disabled>Select</option>
+                                <option value="1">Just say hello</option>
+                                <option value="2">Sign up for a group ride</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3" id="emailDiv" style="display: none;">
+                            <label for="contactEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="contactEmail">
+                        </div>
+
+                        <div id="messageDiv" class="mb-3" style="display: none; ">
+                            <label for="messageArea" class="form-label">Your message</label>
+                            <textarea class="form-control" id="messageArea" rows="3"></textarea>
+                        </div>
+
+                        <div id="rideDiv" class="mb-3" style="display: none;">
+                            <select class="form-select form-control-lg">
+                                <option value="r0" selected disabled>Choose a scheduled ride</option>
+                                <option value="r1">Ride# 1</option>
+                                <option value="r2">Ride# 2</option>
+                                <option value="r3">Ride# 3</option>
+                            </select>
+                            <table class="table table-sm table-hover" style="margin-top: 20px;">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Ride #</th>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Time</th>
+                                        <th scope="col">Route</th>
+                                        <th scope="col">Start Location</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-group-divider" style="border-top-color:  #ff8000;">
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Dec 26</td>
+                                        <td>10:00 am</td>
+                                        <td><a href="../pages/local_routes.html">SRT-ECG-Penny-Wiss-Forbidden</a></td>
+                                        <td>East Falls River Landing</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jan 02</td>
+                                        <td>10:00 am</td>
+                                        <td><a href="../pages/local_routes.html">Valley Forge 100K</a></td>
+                                        <td>TBD</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Jan 16</td>
+                                        <td>11:30 am</td>
+                                        <td><a href="../pages/local_routes.html">SRT-ECG-Penny-Wiss-Forbidden</a></td>
+                                        <td>East Falls River Landing</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                        <!-- <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Password</label>
                         <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+                    </div> -->
+                        <button id="buttonDiv" type="submit" class="btn btn-primary"
+                            style="display: none;">Submit</button>
+                    </form>
+
+
+
+                </div>
+
+
             </div>
 
 
@@ -114,7 +150,7 @@
 
     </div>
     <script src="../script.js"></script>
-    <script src="../bs/bootstrap.bundle.min.js"></script>
+    <!-- <script src="../bs/bootstrap.bundle.min.js"></script> -->
 </body>
 
 </html>
