@@ -13,24 +13,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dosis:wght@200..800&family=Lilita+One&display=swap"
         rel="stylesheet">
-
+    <!-- ref to how to create bs wrapper: https://formden.com/blog/isolate-bootstrap -->
     <link href="../bs/bootstrap-iso.css" rel="stylesheet" />
     <link href="../bs/bs-root.css" rel="stylesheet" />
-
-    <!-- <style>
-        * {
-            outline: 1px solid red;
-            outline-offset: -1px;
-        }
-    </style> -->
 
 </head>
 
 <body>
     <div class="theGrid pages">
-        <header class="hide">
-            <h1>My Simple Cycling Website</h1>
-        </header>
 
         <nav>
             <ul>
@@ -52,11 +42,6 @@
 
                 <div class="bootstrap-iso">
                     <form style="padding-top: 30px;" action="" method="post">
-
-
-
-
-
                         <div class="mb-3">
                             <select id="selectChoice" class="form-select form-control-lg" oninput="formChoice()">
                                 <option value="0" selected disabled>Select</option>
@@ -64,17 +49,14 @@
                                 <option value="2">Sign up for a group ride</option>
                             </select>
                         </div>
-
                         <div class="mb-3" id="emailDiv" style="display: none;">
                             <label for="contactEmail" class="form-label">Email address</label>
                             <input type="email" class="form-control" id="contactEmail">
                         </div>
-
                         <div id="messageDiv" class="mb-3" style="display: none; ">
                             <label for="messageArea" class="form-label">Your message</label>
                             <textarea class="form-control" id="messageArea" rows="3"></textarea>
                         </div>
-
                         <div id="rideDiv" class="mb-3" style="display: none;">
                             <select class="form-select form-control-lg">
                                 <option value="r0" selected disabled>Choose a scheduled ride</option>
@@ -117,12 +99,13 @@
                                 </tbody>
                             </table>
                         </div>
-                        <button id="buttonDiv" type="submit" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#staticBackdrop" value="Submit" style="display: none;" onclick="confirm('Thank you for reaching out')";>Submit
+                        <button id="buttonDiv" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop" value="Submit" style="display: none;">Submit
                         </button>
 
-                        <!-- Modal -->
-                        <!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        <!-- modal or this: 
+                        onclick="confirm('Thank you for reaching out')"; -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
                             tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
@@ -137,19 +120,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> -->
-
-
+                        </div>
                     </form>
-
-
-
                 </div>
-
-
             </div>
-
-
         </main>
 
         <footer>
@@ -165,7 +139,6 @@
 
     </div>
     <script src="../script.js"></script>
-    <!-- <script src="../bs/bootstrap.bundle.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>

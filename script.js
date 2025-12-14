@@ -1,3 +1,8 @@
+// function thanks() {
+//   alert("testing testing");
+// }
+
+
 /// picture model testing /////////
 
 const images = document.querySelectorAll(".galleryImg");
@@ -56,8 +61,4 @@ function formChoice() {
 
     // document.getElementById('test').innerHTML = x;
     // console.log(x);
-}
-
-function thanks() {
-  alert("Hello\nHow are you?");
 }
