@@ -140,7 +140,8 @@ nav {
   flex-direction: row;
   justify-content: center;
   gap: 20px;
-  padding-left: 5vw;
+  /* padding-left: 5vw; */
+  padding: 0 0 20px 5vw;
   background-image: linear-gradient(var(--groundBlue), black);
 
   & i {
@@ -232,7 +233,8 @@ footer {
 }
 
 #welcome {
-  padding: 20px;
+  /* padding: 20px; */
+  padding: 8px;
   max-width: 40%;
   font-size: x-large;
   font-weight: 400;
